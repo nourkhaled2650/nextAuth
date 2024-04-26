@@ -1,3 +1,4 @@
+import LoginButton from "@/components/auth/login-button";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
@@ -7,7 +8,11 @@ export default function Home() {
       <div className="space-y-6">
         <h1 className="text-6xl text-white  drop-shadow-md">Auth</h1>
         <p className="text-white text-lg">a single authentication service</p>
-        <Button> Sign in</Button>
+        <div>
+          <LoginButton>
+            <Button> Sign in</Button>
+          </LoginButton>
+        </div>
       </div>
     </main>
   );
